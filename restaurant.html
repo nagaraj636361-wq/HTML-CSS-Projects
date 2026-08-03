@@ -2,10 +2,52 @@
 <html>
 <head>
 <title>Restaurant</title>
+<style>
+body{
+background:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(91, 245, 155, 1) 50%, rgba(237, 221, 83, 1) 100%);
+color:white;
+background-size:300% 300%;
+animation:bgAnimation 12s ease infinite;
+}
+.container{
+border:double 10px;
+display:flex;
+flex-direction:column;
+text-align:center;
+}
+@keyframes bgAnimation{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+#n{
+text-align:left;
+border:1px solid black;
+}
+button{
+background-color:oliva;
+padding:10px 10px;
+margin:5px;
+border:3px solid black;
+border-radius:20px;
+animation:blink;
+}
+hover:button{
+transform:scale(1.1);
+box-shadow:0 0 25px white;
+}
+@keyframes blink{50%{border-color:transparent;}
+
+}
+</style>
+
 </head>
-<body style="background-color:orange">
-<h1 style="background-color:brown; text-align:center;border-style:groove"><i>Dining UB City Restaurant</i></h1>
+<body>
+<div class="container">
+<h1 style="background-color:linen; text-align:center;border-style:groove;color:black">HOTEL FERN</h1>
+
 <h2 style="color:black">Veg Items</h2>
+
 <table border="2" style="color:black">
 <tr >
 <th>sl.no</th>
@@ -78,8 +120,6 @@
 </table>
 <table border="2"style="color:black">
 <h2 style="color:black">Soft Drinks</h2>
-
-<img src="images21.jpg" width="200px" height="100px">
 <tr>
 <th>S1.no</th>
 <th>Drinks name</th>
@@ -111,13 +151,17 @@
 <td>Rs 40</td>
 </tr>
 </table>
+<div id="n">
 <h2 style="color:black">Contact Our Restaurant For Any Home Delivery</h2>
-<h3 style="color:black"><b>6363618142</b></h3>
-<h3 style="color:black"><b>vijayapurrseto1@gmail.com</b></h3>
+<h3 style="color:black"><b>Cont.no:6363618142</b></h3>
+<h3 style="color:black"><b>Email:vijayapurrseto1@gmail.com</b></h3>
 <h2 style="color:black">Location</h2>
-<a href="https://www.google.com/maps/place/Fern+Restaurant/@16.816593,75.6560375,15z/data=!4m10!1m2!2m1!1srestaurants!3m6!1s0x3bc6ffb444d5242f:0xae08eed55cbe45ac!8m2!3d16.8263691!4d75.6759425!15sCgtyZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBFmZpbmVfZGluaW5nX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11lm15n3cq?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" style="color:black"><b>click</b></a><br><br>
-<a href="https://ubcitybangalore.in/dining/"style="color:solid"><b>Click here</b></a><br><br>
-<a href="feedback.html"style="color:black"><b>feedback</b></a><br><br>
+<a href="https://www.google.com/maps/place/Fern+Restaurant/@16.816593,75.6560375,15z/data=!4m10!1m2!2m1!1srestaurants!3m6!1s0x3bc6ffb444d5242f:0xae08eed55cbe45ac!8m2!3d16.8263691!4d75.6759425!15sCgtyZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBFmZpbmVfZGluaW5nX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11lm15n3cq?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" style="color:yellow"><button>click</button></a><br>
+<a href="feedback.html"style="color:black"><button>feedback</button></a><br><br>
+</div>
+</div>
 </body>
 </html>
+
+
 
