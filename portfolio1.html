@@ -7,8 +7,24 @@
         <style>
         body{
            text-align:center;
-            background:rgb(23, 1, 44);
-            color:whitesmoke;
+           background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(91, 245, 155, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            color:black;
+            background-size: 400% 400%;
+            animation: bgAnimation 10s ease infinite;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
             a{
                 text-decoration: none;
@@ -24,16 +40,21 @@
           div{
             display: grid;
           }
-        button
-            {
-            padding:15px;
+        button{
+       
+            padding:12px 15px;
+            font-size:18px;
             margin:auto;
             width:fit-content;
             border:2px solid black;
             border-radius:30px;
+
+            
         }
         button:hover{
-            background-color: aquamarine;
+            background-color:antiquewhite;
+            transform:scale(1.1);
+             box-shadow:gray;
         }
         </style>
     </head>
