@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal portfolio</title>
+        <meta name="viewport"content="width=devic-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+        body{
+           text-align:center;
+            background:rgb(23, 1, 44);
+            color:whitesmoke;
+        }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            div{
+                display:flex;
+                padding:10px;
+                margin:auto;
+                width: auto;
+                justify-content: center;
+
+            }
+          div{
+            display: grid;
+          }
+            
+        
+        button{
+       
+            padding:15px;
+            margin:auto;
+            width:fit-content;
+            border:2px solid black;
+            border-radius:30px;
+
+            
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        </style>
+    </head>
+    <body>
+        
+       
+        <hero>
+            <i>
+            <h1> Hello I'am Nagaraj Byakod</h1>
+            <h2>I'am a BCA Student</h2>
+            </i>
+                </hero>
+             <div>
+            <section >
+            <h3>I am frontend developer i can build interactive websites </h3>
+            <button onclick="about()" ">About</a></button>
+            <button onclick="skill()">Skills</button>
+        <button onclick="contact()">Contact</button>
+
+        <button onclick="hire()">Hire me</button>
+         <button onclick="help()">Help</button>
+                </section>
+        
+        </div>
+      
+           
+      
+<section id="about">
+    <p id="port"></p>
+
+</section>
+       <script>
+        function skill(){
+            document.getElementById("port").innerHTML="Python programming<br>HTML, CSS, JavaScript<br> SQL<br> Django<br> REST APIs, GitHub, and basic deployment<br>";
+        }
+        function about(){
+            document.getElementById("port").innerHTML="I am Nagaraj Byakod I am a frontend Developer i can build a userfriendly and interactive websites with knowledge of Python, HTML, CSS, JavaScript, SQL, and Django. I am interested in developing responsive and user-friendly web applications with both frontend and backend functionality. I have experience working on projects such as restaurant websites and management systems, and I am continuously improving my programming, database, API, and problem-solving skills. My goal is to build a successful career as a Python Full Stack Developer and contribute to real-world software projects.";
+        }
+        function contact(){
+            document.getElementById("port").innerHTML="Pone no:6363618142<br>mail:nagaraj123@gmail.com";
+        }
+        function hire(){
+            document.getElementById("port").innerHTML="Thank you for your Interest....😊";
+        }
+         function help(){
+           document.getElementById("port").innerHTML="Try after sometime!!";
+           alert("Server issue‼️‼️‼️‼️");
+        }
+       </script>
+    </body>
+</html>
